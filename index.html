@@ -44,7 +44,7 @@
         i = i - 1;
 
         countobj = document.getElementById("count");
-        console.log("Updating object: " + countobj);
+        console.log("Updating i: " + i);
         countobj.innerHTML = "<b>" + i + "</b>";
 
         if (i<=0){ //single = assign, double == comparison
@@ -53,7 +53,7 @@
     }
 </script>
 
-    <h2>Count Down: <span id="count">20</span></h2>
+    <h2>Count Down: <span id="count"><script>document.write(i)</script></span></h2> 
     <button onclick="updateCount()">Next</button>
 
 </body>  
