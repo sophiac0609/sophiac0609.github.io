@@ -38,7 +38,7 @@
   <h1>Exploring the DOM</h1>
 
   <script>
-    var i = 20;
+    var i =10;
 
     function updateCount() {
         i = i - 1;
@@ -47,7 +47,7 @@
         console.log("Updating object: " + countobj);
         countobj.innerHTML = "<b>" + i + "</b>";
 
-        if (i==0){ //single = assign, double == comparison
+        if (i<=0){ //single = assign, double == comparison
           countobj.innerHTML = "<b font-size = '+5'>BOOM! </b>";
         }
     }
