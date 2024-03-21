@@ -47,6 +47,9 @@
         console.log("Updating i: " + i);
         countobj.innerHTML = "<b>" + i + "</b>";
 
+        //Change background color to a darker red as i decreases
+        var intensity = Math.max(0, 255 - (25 * (10-1)));
+        document.body.style.backgroundColor = "rgb(" + intensity + ", 0, 0)";
         if (i<=0){ //single = assign, double == comparison
           countobj.innerHTML = "<b font-size = '+5'>BOOM! </b>";
         }
