@@ -45,13 +45,13 @@
 
         countobj = document.getElementById("count");
         console.log("Updating i: " + i);
-        countobj.innerHTML = "<b>" + i + "</b>";
+        countobj.innerHTML = "<b color = >" + i + "</b>";
 
         //Change background color to a darker red as i decreases
-        var intensity = Math.max(20, 150 - (25 * ((10-i)/10)));
+        var intensity = Math.max(20, 255 - (15 * (i*10)));
         document.body.style.backgroundColor = "rgb(" + intensity + ", 0, 0)";
         if (i<=0){ //single = assign, double == comparison
-          countobj.innerHTML = "<b font-size = '+5'>BOOM! </b>";
+          countobj.innerHTML = "<b 'font-size : +5; color: #FFFF00' >BOOM! </b>";
         }
     }
 </script>
