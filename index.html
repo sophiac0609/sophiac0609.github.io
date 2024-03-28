@@ -17,32 +17,21 @@
     Click this <a href="https://www.gettyimages.com/photos/capybara" target="_blank">link</a> for a gallery of capybaras
   </p>
 
-  <center>
-    <body> 
+  <div style = "text-align:center;">
+  
       <img id = "caroImage" height = "400" src = "" alt = "Image Changes">
-      <body>
-        
-      </body>
-      <body>
+      <p>
         (click next for more)
-      </body>
-      <button id = "nextButton">
-        Next</button>
-
-      <scrip src = "script.js"
-    </body>
+      </p>
+  
+      <button id = "nextButton">Next</button>
+  </div>
+  
     <a href="watermelon.jpg"><img width="80%" src="watermelon.jpg"></a>
-  </center>
 
   Here's more <a href="https://www.nationalgeographic.com/animals/mammals/facts/cabybara-facts" target="_blank">information</a> about capybaras!
   <p>Here's more <a href="page.html">pages</a> from my website!</p>
 
-  <p>
-    testing commit from local editing
-  </p>
-  <h1> 
-    testing this css style
-  </h1>
 
   <div class="problem"> 
     testing this css style
@@ -50,28 +39,11 @@
 
   <h1>Exploring the DOM</h1>
 
-  <script>
-    var i =10;
 
-    function updateCount() {
-        i = i - 1;
+  <h2>Count Down: <span id="count"><script>document.write(i)</script></span></h2> 
+  <button onclick="updateCount()">Next</button>
 
-        countobj = document.getElementById("count");
-        console.log("Updating i: " + i);
-        countobj.innerHTML = "<b color = >" + i + "</b>";
-
-        //Change background color to a darker red as i decreases
-        var intensity = Math.max(20, 255 - (i * 20.5));
-        document.body.style.backgroundColor = "rgb(" + intensity + ", 0, 0)";
-        if (i<=0){ //single = assign, double == comparison
-          countobj.innerHTML = "<b style='color: #FFFF00;'>BOOM!</b>";
-        }
-    }
-
-</script>
-
-    <h2>Count Down: <span id="count"><script>document.write(i)</script></span></h2> 
-    <button onclick="updateCount()">Next</button>
+<script src = "script.js"></script>
 
 </body>  
 </html>

@@ -1,5 +1,21 @@
+var i =10;
 
-    const images = [
+function updateCount() {
+    i = i - 1;
+
+    countobj = document.getElementById("count");
+    console.log("Updating i: " + i);
+    countobj.innerHTML = "<b color = >" + i + "</b>";
+
+    //Change background color to a darker red as i decreases
+    var intensity = Math.max(20, 255 - (i * 20.5));
+    document.body.style.backgroundColor = "rgb(" + intensity + ", 0, 0)";
+    if (i<=0){ //single = assign, double == comparison
+      countobj.innerHTML = "<b style='color: #FFFF00;'>BOOM!</b>";
+    }
+}
+
+const images = [
     {url: 'images/capy1.png', caption: 'Capy bara 1'},
     {url: 'images/capy2.png', caption: 'Capy bara 2'},
     {url: 'images/capy3.png', caption: 'Capy bara 3'}
