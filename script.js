@@ -35,7 +35,7 @@ function updateImage() {
 prevButton.addEventListener("click", function(){
     currentIndex--;
     if(currentIndex<0){
-        currentIndex = image.length - 1;
+        currentIndex = images.length - 1;
     }
     updateImage();
 })
