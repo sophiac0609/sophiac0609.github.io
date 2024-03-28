@@ -14,7 +14,7 @@ function updateCount() {
       countobj.innerHTML = "<b style='color: #FFFF00;'>BOOM!</b>";
     }
 }
-
+function initialCarousel(){
 const images = [
     {url: 'images/capy1.png', caption: 'Capy bara 1'},
     {url: 'images/capy2.png', caption: 'Capy bara 2'},
@@ -28,6 +28,7 @@ let currentIndex = 0;
 
 function updateImage() {
     caroImage.src = images[currentIndex].url;
+    document.getElementById("caption".innerText = images[currentIndex].caption);
 }
 nextButton.addEventListener("click", function(){
     currentIndex++;
@@ -41,3 +42,4 @@ nextButton.addEventListener("click", function(){
 )
 
 updateImage();
+}
