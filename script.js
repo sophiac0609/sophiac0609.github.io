@@ -1,8 +1,8 @@
 
     const images = [
-    'capy1.png',
-    'capy2.png',
-    'capy3.png'
+    capy1.png,
+    capy2.png,
+    capy3.png
     ];
 
 const caroImage = document.getElementById("caroImage");
