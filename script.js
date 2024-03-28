@@ -22,14 +22,23 @@ const images = [
     ];
 
 const caroImage = document.getElementById("caroImage");
+const caption = document.getElementById("caption")
+const prevButton = document.getElementById("previousButton");
 const nextButton = document.getElementById("nextButton");
 
 let currentIndex = 0;
 
 function updateImage() {
     caroImage.src = images[currentIndex].url;
-    document.getElementById("caption".innerText = images[currentIndex].caption);
+    caption.textContent = images[currentIndex].caption;
 }
+prevButton.addEventListener("click", function(){
+    currentIndex--;
+    if(currentIndex<0){
+        currentIndex = image.length - 1;
+    }
+    updateImage();
+})
 nextButton.addEventListener("click", function(){
     currentIndex++;
 
