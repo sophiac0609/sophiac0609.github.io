@@ -16,9 +16,9 @@ function updateCount() {
 }
 function initialCarousel(){
 const images = [
-    {url: 'images/capy1.png', caption: 'Capy bara 1'},
-    {url: 'images/capy2.png', caption: 'Capy bara 2'},
-    {url: 'images/capy3.png', caption: 'Capy bara 3'}
+    {url: 'images/capy1.png', caption: 'one capybara?'},
+    {url: 'images/capy2.png', caption: 'a few capybaras'},
+    {url: 'images/capy3.png', caption: 'A WHOLE FAMILY OF CAPYBARAS'}
     ];
 
 const caroImage = document.getElementById("caroImage");
